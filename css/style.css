@@ -93,3 +93,96 @@ footer{
     text-align: center;
     padding: 5px;
 }
+.dashboard {
+    display: block;
+    padding: 30px;
+}
+.topbar{
+    background-color: #142B46;
+    color: white;
+    padding: 10px 30px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.sidebar{
+    display:flex;
+    flex-direction: column;
+    width: 220px;
+    background-color: #142B46;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+.sidebar nav{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.sidebar a{
+    color: white;
+    text-decoration: None;
+    padding: 12px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+.sidebar a:hover{
+    background-color: #304B68;
+}
+.content-wrapper{
+    display:flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: stretch;
+}
+.stats-container{
+    display: flex;
+    align-items: stretch;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.stat-card{
+    background-color: white;
+    border: 1px #E0E4E8 solid;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 180px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.hearing-section{
+    background-color: white;
+    border: 1px #E0E4E8 solid;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);  
+}
+.hearing-section table{
+    background-color: white;
+    border: 1px #E0E4E8 solid;
+    /* padding: 14px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05); */
+    box-sizing: border-box; 
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    table-layout: fixed;
+}
+.hearing-section tr{
+
+}
+.hearing-section th{
+    background-color: #142B46;
+    color: white;
+    padding: 10px 20px;
+    text-align: left;
+    border: 1px black solid;
+}
+.hearing-section td{
+    padding: 10px 20px;
+    text-align: left;
+    border: 1px black solid;
+}
