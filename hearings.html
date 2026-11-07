@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEARINGS | Court Hearing Schedule Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="topbar">
+        <h1>JUSTICE</h1>
+        <div class="topbar-right">
+            <input type="text" placeholder="Search Cases, Hearings..." class="topbar-search" id="searchInput">
+            <button class="notifications">Notifications</button>
+            <div class="profile">
+                <span>👤</span>
+                <span>Admin</span>
+            </div>
+        </div>
+    </header> 
+    <div class="content-wrapper">
+        <aside class="sidebar">
+            <nav>
+                <a href="dashboard.html" >Dashboard</a>
+                <a href="hearings.html" class="active">Hearings</a>
+                <a href="cases.html">Cases</a>
+                <a href="calendar.html">Calendar</a>
+            </nav>
+        </aside>
+        <main class="dashboard">
+            <h2>Hearing Management</h2>
+            <section class="hearing-actions">
+
+            <input type="text" placeholder="Search hearings..." class="hearing-search" id="hearingSearch">
+
+            <select id="statusFilter">
+                <option value="all">All Statuses</option>
+                <option value="upcoming">Upcoming</option>
+                <option value="completed">Completed</option>
+                <option value="postponed">Postponed</option>
+            </select>
+
+            <a href="add-hearing.html" class="add-hearing-btn">+ Add New Hearing</a>
+
+            </section>
+            <section class="hearing-section">
+                <h3>All Hearings</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Case ID</th>
+                            <th>Case Title</th>
+                            <th>Judge</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Courtroom</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CS-101</td>
+                            <td>State vs. Sharma</td>
+                            <td>Justice Mehta</td>
+                            <td>10 Nov 2026</td>
+                            <td>10:30 AM</td>
+                            <td>Room 02</td>
+                            <td><span class="status upcoming">Upcoming</span></td>
+                        </tr>
+                        <tr>
+                            <td>CS-102</td>
+                            <td>Singh vs. State</td>
+                            <td>Justice Kapoor</td>
+                            <td>08 Nov 2026</td>
+                            <td>11:00 AM</td>
+                            <td>Room 04</td>
+                            <td><span class="status completed">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>CS-103</td>
+                            <td>Verma vs. Verma</td>
+                            <td>Justice Mehta</td>
+                            <td>12 Nov 2026</td>
+                            <td>02:00 PM</td>
+                            <td>Room 01</td>
+                            <td><span class="status postponed">Postponed</span></td>
+                        </tr>
+                        <tr>
+                            <td>CS-104</td>
+                            <td>State vs. Kumar</td>
+                            <td>Justice Rao</td>
+                            <td>14 Nov 2026</td>
+                            <td>12:30 PM</td>
+                            <td>Room 03</td>
+                            <td><span class="status upcoming">Upcoming</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="js/hearings.js"></script>
+</body>
+</html>
