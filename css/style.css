@@ -104,6 +104,39 @@ footer{
     height: 60px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+.topbar-search:focus{
+    outline: 2px solid #C5A45D;
+    outline-offset: 2px;
+}
+.topbar-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.topbar-search{
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: none;
+    width: 250px;
+}
+.notifications{
+    background-color: transparent;
+    color: white;
+    border: 1px solid #60758C;
+    border-radius: 6px;
+    padding: 9px 14px;
+    cursor: pointer;
+}
+.notifications:hover{
+    background-color: #304B68;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
 }
 .sidebar{
     display:flex;
@@ -130,6 +163,10 @@ footer{
 .sidebar a:hover{
     background-color: #304B68;
 }
+.sidebar a.active{
+    background-color: #304B68;
+    border: 4px #C5A45D solid;
+}
 .content-wrapper{
     display:flex;
     flex-direction: row;
@@ -151,6 +188,19 @@ footer{
     flex: 1 1 180px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
+.stat-card h3{
+    color: #60758C;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.stat-card p{
+    color: #142B46;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+}
 .hearing-section{
     background-color: white;
     border: 1px #E0E4E8 solid;
@@ -162,17 +212,23 @@ footer{
 .hearing-section table{
     background-color: white;
     border: 1px #E0E4E8 solid;
-    /* padding: 14px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05); */
     box-sizing: border-box; 
     width: 100%;
     border-collapse: collapse;
     text-align: left;
     table-layout: fixed;
 }
-.hearing-section tr{
-
+.hearing-section tr:nth-child(even){
+    background-color: #F2F4F7;
+}
+.hearing-section tr:hover{
+    background-color: #E8EDF3;
+}
+.hearing-section td{
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #E0E4E8;
+    border-bottom: none;
 }
 .hearing-section th{
     background-color: #142B46;
@@ -185,4 +241,7 @@ footer{
     padding: 10px 20px;
     text-align: left;
     border: 1px black solid;
+}
+.upcoming{
+    color: #46ba0c;
 }

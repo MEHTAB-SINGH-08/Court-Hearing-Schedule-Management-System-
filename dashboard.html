@@ -9,11 +9,19 @@
 <body>
     <header class="topbar">
         <h1>JUSTICE</h1>
-    </header>
+        <div class="topbar-right">
+            <input type="text" placeholder="Search Cases, Hearings..." class="topbar-search" id="searchInput">
+            <button class="notifications">Notifications</button>
+            <div class="profile">
+                <span>👤</span>
+                <span>Admin</span>
+            </div>
+        </div>
+    </header> 
     <div class="content-wrapper">
         <aside class="sidebar">
             <nav>
-                <a href="dashboard.html">Dashboard</a>
+                <a href="dashboard.html" class="active">Dashboard</a>
                 <a href="hearings.html">Hearings</a>
                 <a href="cases.html">Cases</a>
                 <a href="calendar.html">Calendar</a>
@@ -54,25 +62,26 @@
                         <td>Divorce</td>
                         <td>8 November, 2026</td>
                         <td>34-705</td>
-                        <td>Upcoming</td>
+                        <td><span class="status upcoming">Upcoming</span></td>
                     </tr>
                     <tr>
                         <td>00000002</td>
                         <td>Murder</td>
                         <td>12 November, 2026</td>
                         <td>32-222</td>
-                        <td>Upcoming</td> 
+                        <td><span class="status upcoming">Upcoming</span></td> 
                     </tr>
                     <tr>
                         <td>00000003</td>
                         <td>Money Laundering</td>
                         <td>15 November, 2026</td>
                         <td>27-685</td>
-                        <td>Upcoming</td>
+                        <td><span class="status upcoming">Upcoming</span></td>
                     </tr>   
                 </table>
             </section>
         </main>
     </div>
+    <script src="js/dashboard.js"></script>
 </body>
 </html>
