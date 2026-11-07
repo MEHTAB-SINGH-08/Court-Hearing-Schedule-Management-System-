@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD HEARING | JUSTICE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <h1>JUSTICE</h1>
+        <div class="profile">
+            <span>👤</span>
+            <span>Admin</span>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+
+        <aside class="sidebar">
+            <nav>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="hearings.html" class="active">Hearings</a>
+                <a href="cases.html">Cases</a>
+                <a href="calendar.html">Calendar</a>
+            </nav>
+        </aside>
+
+        <main class="dashboard">
+            <h2>Add New Hearing</h2>
+
+            <section class="add-hearing-form">
+
+                <h3>Hearing Information</h3>
+
+                <form id="hearingForm">
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label for="caseId">Case ID</label>
+                            <input type="text" id="caseId" placeholder="e.g. CS-105" required>
+                        </div>
+
+                    <div class="form-group">
+                        <label for="caseTitle">Case Title</label>
+                        <input type="text" id="caseTitle" placeholder="Enter case title" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="judge">Judge Name</label>
+                        <input type="text" id="judge" placeholder="Enter judge name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="hearingDate">Hearing Date</label>
+                        <input type="date" id="hearingDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="hearingTime">Hearing Time</label>
+                        <input type="time" id="hearingTime" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="courtroom">Courtroom</label>
+                        <select id="courtroom" required>
+                            <option value="">Select Courtroom</option>
+                            <option>Room 01</option>
+                            <option>Room 02</option>
+                            <option>Room 03</option>
+                            <option>Room 04</option>
+                            <option>Room 05</option>
+                            <option>Room 06</option>
+                            <option>Room 07</option>
+                            <option>Room 08</option>
+                            <option>Room 09</option>
+                            <option>Room 10</option>
+                            <option>Room 11</option>
+                            <option>Room 12</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="hearingStatus">Status</label>
+                        <select id="hearingStatus" required>
+                            <option value="">Select Status</option>
+                            <option>Upcoming</option>
+                            <option>Completed</option>
+                            <option>Postponed</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="submit" class="save-btn">Save Hearing</button>
+                        <a href="hearings.html" class="cancel-btn">Cancel</a>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+    <script src="js/add-hearing.js"></script>
+</body>
+</html>
