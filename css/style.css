@@ -165,7 +165,7 @@ footer{
 }
 .sidebar a.active{
     background-color: #304B68;
-    border: 4px #C5A45D solid;
+    border-left: 4px #C5A45D solid;
 }
 .content-wrapper{
     display:flex;
@@ -242,6 +242,243 @@ footer{
     text-align: left;
     border: 1px black solid;
 }
-.upcoming{
-    color: #46ba0c;
+.upcoming {
+    background-color: #FFF2D6;
+    color: #946200;
+}
+.completed {
+    background-color: #DDF5E5;
+    color: #18743A;
+}
+.postponed {
+    background-color: #FCE4E4;
+    color: #A52A2A;
+}
+.hearing-actions{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+.hearing-search,
+.hearing-actions select{
+    padding: 12px;
+    border: 1px solid #D5DCE3;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.hearing-search{
+    flex: 1;
+}
+.add-hearing-btn{
+    background-color: #142B46;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.add-hearing-form {
+    background-color: white;
+    padding: 30px;
+    margin-top: 25px;
+    border-radius: 10px;
+    border: 1px solid #D5DCE3;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.add-hearing-form h3 {
+    color: #142B46;
+    margin-bottom: 25px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    color: #304B68;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+    padding: 12px;
+    border: 1px solid #D5DCE3;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #C5A45D;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.save-btn {
+    background-color: #142B46;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: #E8EDF3;
+    color: #142B46;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+}
+
+.save-btn:hover {
+    background-color: #304B68;
+}
+
+.cancel-btn:hover {
+    background-color: #D5DCE3;
+}
+
+.dashboard-subtitle {
+    color: #60758C;
+    margin-top: -10px;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    margin-top: 25px;
+}
+
+
+
+.dashboard-panel {
+    background-color: white;
+    border: 1px solid #D5DCE3;
+    border-radius: 10px;
+    padding: 22px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.04);
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.panel-header h3 {
+    color: #142B46;
+    font-size: 17px;
+}
+
+.panel-header a {
+    color: #946200;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+
+.mini-hearing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 0;
+    border-bottom: 1px solid #E8EDF3;
+}
+
+.mini-hearing:last-child {
+    border-bottom: none;
+}
+
+.mini-hearing strong {
+    color: #142B46;
+    font-size: 14px;
+}
+
+.mini-hearing p {
+    color: #60758C;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.mini-hearing span {
+    color: #304B68;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.schedule-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-bottom: 1px solid #E8EDF3;
+    color: #60758C;
+    font-size: 14px;
+}
+
+.schedule-item:last-child {
+    border-bottom: none;
+}
+
+.schedule-item strong {
+    color: #142B46;
+}
+
+
+.activity-item {
+    display: flex;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #E8EDF3;
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+}
+
+.activity-dot {
+    width: 9px;
+    height: 9px;
+    min-width: 9px;
+    background-color: #C5A45D;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.activity-item strong {
+    color: #142B46;
+    font-size: 13px;
+}
+
+.activity-item p {
+    color: #60758C;
+    font-size: 12px;
+    margin-top: 5px;
 }

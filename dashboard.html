@@ -10,7 +10,6 @@
     <header class="topbar">
         <h1>JUSTICE</h1>
         <div class="topbar-right">
-            <input type="text" placeholder="Search Cases, Hearings..." class="topbar-search" id="searchInput">
             <button class="notifications">Notifications</button>
             <div class="profile">
                 <span>👤</span>
@@ -27,60 +26,180 @@
                 <a href="calendar.html">Calendar</a>
             </nav>
         </aside>
-        <main class="dashboard">
-            <h2>Dashboard</h2>
-            <section class="stats-container">
-                <div class="stat-card">
-                    <h3>Total Cases</h3>
-                    <p>248</p>
-                </div>
-                <div class="stat-card">
-                    <h3>Today's Hearings</h3>
-                    <p>12</p>
-                </div>
-                <div class="stat-card">
-                    <h3>Pending Cases</h3>
-                    <p>86</p>
-                </div>
-                <div class="stat-card">
-                    <h3>Completed Cases</h3>
-                    <p>150</p>
-                </div>
-            </section>
-            <section class="hearing-section">
+            
+<main class="dashboard">
+
+    <h2>Dashboard</h2>
+    <p class="dashboard-subtitle">Court Hearing Schedule Overview</p>
+
+    <section class="stats-container">
+
+        <div class="stat-card">
+            <h3>Total Hearings</h3>
+            <p>248</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Today's Hearings</h3>
+            <p>12</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Upcoming Hearings</h3>
+            <p>32</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Postponed</h3>
+            <p>8</p>
+        </div>
+
+    </section>
+
+
+    <section class="dashboard-grid">
+
+        <div class="dashboard-panel">
+
+            <div class="panel-header">
                 <h3>Upcoming Hearings</h3>
-                <table>
-                    <tr>
-                        <th>Case ID</th>
-                        <th>Case Title</th>
-                        <th>Hearing Date</th>
-                        <th>Courtroom</th>
-                        <th>Status</th>
-                    </tr>
-                    <tr>
-                        <td>00000001</td>
-                        <td>Divorce</td>
-                        <td>8 November, 2026</td>
-                        <td>34-705</td>
-                        <td><span class="status upcoming">Upcoming</span></td>
-                    </tr>
-                    <tr>
-                        <td>00000002</td>
-                        <td>Murder</td>
-                        <td>12 November, 2026</td>
-                        <td>32-222</td>
-                        <td><span class="status upcoming">Upcoming</span></td> 
-                    </tr>
-                    <tr>
-                        <td>00000003</td>
-                        <td>Money Laundering</td>
-                        <td>15 November, 2026</td>
-                        <td>27-685</td>
-                        <td><span class="status upcoming">Upcoming</span></td>
-                    </tr>   
-                </table>
-            </section>
-        </main>
+                <a href="hearings.html">View All</a>
+            </div>
+
+            <div class="mini-hearing">
+                <div>
+                    <strong>CS-101</strong>
+                    <p>State vs. Sharma</p>
+                </div>
+                <span>10:30 AM</span>
+            </div>
+
+            <div class="mini-hearing">
+                <div>
+                    <strong>CS-105</strong>
+                    <p>Singh vs. State</p>
+                </div>
+                <span>11:00 AM</span>
+            </div>
+
+            <div class="mini-hearing">
+                <div>
+                    <strong>CS-108</strong>
+                    <p>Verma vs. Kumar</p>
+                </div>
+                <span>12:00 PM</span>
+            </div>
+
+            <div class="mini-hearing">
+                <div>
+                    <strong>CS-110</strong>
+                    <p>State vs. Mehra</p>
+                </div>
+                <span>02:00 PM</span>
+            </div>
+
+        </div>
+
+
+        <div class="dashboard-panel">
+
+            <div class="panel-header">
+                <h3>Weekly Schedule</h3>
+                <a href="calendar.html">Calendar</a>
+            </div>
+
+            <div class="schedule-item">
+                <span>Monday</span>
+                <strong>8 Hearings</strong>
+            </div>
+
+            <div class="schedule-item">
+                <span>Tuesday</span>
+                <strong>12 Hearings</strong>
+            </div>
+
+            <div class="schedule-item">
+                <span>Wednesday</span>
+                <strong>6 Hearings</strong>
+            </div>
+
+            <div class="schedule-item">
+                <span>Thursday</span>
+                <strong>10 Hearings</strong>
+            </div>
+
+            <div class="schedule-item">
+                <span>Friday</span>
+                <strong>9 Hearings</strong>
+            </div>
+
+        </div>
+
+        <div class="dashboard-panel">
+
+            <div class="panel-header">
+                <h3>Courtroom Utilization</h3>
+            </div>
+
+            <div class="schedule-item">
+                <span>Room 01</span>
+                <strong>8 Hearings</strong>
+            </div>
+
+            <div class="schedule-item">
+                <span>Room 02</span>
+                <strong>12 Hearings</strong>
+            </div>
+
+            <div class="schedule-item">
+                <span>Room 03</span>
+                <strong>6 Hearings</strong>
+            </div>
+
+            <div class="schedule-item">
+                <span>Room 04</span>
+                <strong>9 Hearings</strong>
+            </div>
+
+        </div>
+
+
+        <div class="dashboard-panel">
+
+            <div class="panel-header">
+                <h3>Recent Activity</h3>
+            </div>
+
+            <div class="activity-item">
+                <span class="activity-dot"></span>
+                <div>
+                    <strong>New Hearing Added</strong>
+                    <p>Case CS-115 was scheduled.</p>
+                </div>
+            </div>
+
+            <div class="activity-item">
+                <span class="activity-dot"></span>
+                <div>
+                    <strong>Hearing Postponed</strong>
+                    <p>Case CS-103 was postponed.</p>
+                </div>
+            </div>
+
+            <div class="activity-item">
+                <span class="activity-dot"></span>
+                <div>
+                    <strong>Case Updated</strong>
+                    <p>Details of CS-108 were updated.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
     </div>
     <script src="js/dashboard.js"></script>
 </body>
