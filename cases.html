@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASES | Court Hearing Schedule Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <h1>JUSTICE</h1>
+
+        <div class="topbar-right">
+            <input type="text" placeholder="Search Cases..." class="topbar-search">
+            <button class="notifications">Notifications</button>
+
+            <div class="profile">
+                <span>👤</span>
+                <span>Admin</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+
+        <aside class="sidebar">
+            <nav>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="hearings.html">Hearings</a>
+                <a href="cases.html" class="active">Cases</a>
+                <a href="calendar.html">Calendar</a>
+                <a href="about.html">About Project</a>
+            </nav>
+        </aside>
+
+        <main class="dashboard">
+
+            <h2>Case Management</h2>
+            <p class="dashboard-subtitle">
+                View and manage registered court cases.
+            </p>
+
+            <section class="hearing-actions">
+
+                <input
+                    type="text"
+                    placeholder="Search by case ID or title..."
+                    class="hearing-search"
+                    id="caseSearch"
+                >
+
+                <select id="caseStatusFilter">
+                    <option value="all">All Statuses</option>
+                    <option value="active">Active</option>
+                    <option value="pending">Pending</option>
+                    <option value="closed">Closed</option>
+                </select>
+
+            </section>
+
+            <section class="hearing-section">
+
+                <h3>Registered Cases</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Case ID</th>
+                            <th>Case Title</th>
+                            <th>Plaintiff</th>
+                            <th>Defendant</th>
+                            <th>Judge</th>
+                            <th>Next Hearing</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>CS-101</td>
+                            <td>State vs. Sharma</td>
+                            <td>State</td>
+                            <td>Rahul Sharma</td>
+                            <td>Justice Mehta</td>
+                            <td>10 Nov 2026</td>
+                            <td><span class="case-status active-case">Active</span></td>
+                            <td><a href="case-details.html" class="view-btn">View Details</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>CS-102</td>
+                            <td>Singh vs. State</td>
+                            <td>Arjun Singh</td>
+                            <td>State</td>
+                            <td>Justice Kapoor</td>
+                            <td>08 Nov 2026</td>
+                            <td><span class="case-status closed-case">Closed</span></td>
+                            <td><a href="case-details.html" class="view-btn">View Details</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>CS-103</td>
+                            <td>Verma vs. Verma</td>
+                            <td>Priya Verma</td>
+                            <td>Amit Verma</td>
+                            <td>Justice Mehta</td>
+                            <td>12 Nov 2026</td>
+                            <td><span class="case-status pending-case">Pending</span></td>
+                            <td><a href="case-details.html" class="view-btn">View Details</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>CS-104</td>
+                            <td>State vs. Kumar</td>
+                            <td>State</td>
+                            <td>Rohit Kumar</td>
+                            <td>Justice Rao</td>
+                            <td>14 Nov 2026</td>
+                            <td><span class="case-status active-case">Active</span></td>
+                            <td><a href="case-details.html" class="view-btn">View Details</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>CS-105</td>
+                            <td>Mehra vs. Corporation</td>
+                            <td>Vikram Mehra</td>
+                            <td>City Corporation</td>
+                            <td>Justice Kapoor</td>
+                            <td>18 Nov 2026</td>
+                            <td><span class="case-status active-case">Active</span></td>
+                            <td><a href="case-details.html" class="view-btn">View Details</a></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </section>
+
+        </main>
+
+    </div>
+
+<footer class="footer">
+    <h3>JUSTICE</h3>
+    <p>Court Hearing Schedule Management System</p>
+    <p>© 2026 JUSTICE | Academic Project</p>
+    <small>All records displayed are fictional demo data.</small>
+</footer>
+
+    <script src="js/cases.js"></script>
+
+</body>
+</html>
