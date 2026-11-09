@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALENDAR | JUSTICE</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <h1>JUSTICE</h1>
+
+        <div class="topbar-right">
+            <div class="profile">
+                <span>👤</span>
+                <span>Admin</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+
+        <aside class="sidebar">
+            <nav>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="hearings.html">Hearings</a>
+                <a href="cases.html">Cases</a>
+                <a href="calendar.html" class="active">Calendar</a>
+                <a href="about.html">About Project</a>
+            </nav>
+        </aside>
+
+        <main class="dashboard">
+
+            <h2>Hearing Calendar</h2>
+            <p class="dashboard-subtitle">
+                View and manage scheduled court hearings.
+            </p>
+
+            <section class="calendar-panel">
+
+                <div class="calendar-header">
+                    <button id="prevMonth">&lt;</button>
+
+                    <h3 id="monthYear"></h3>
+
+                    <button id="nextMonth">&gt;</button>
+                </div>
+
+                <div class="calendar-weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                </div>
+
+                <div class="calendar-days" id="calendarDays">
+                </div>
+
+            </section>
+
+            <section class="calendar-legend">
+
+                <div><span class="legend-dot upcoming-dot"></span> Upcoming</div>
+                <div><span class="legend-dot completed-dot"></span> Completed</div>
+                <div><span class="legend-dot postponed-dot"></span> Postponed</div>
+
+            </section>
+
+            <section class="selected-date-panel">
+
+                <h3>Selected Date Hearings</h3>
+
+                <div id="hearingDetails">
+                    <p>Select a date to view its hearings.</p>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+    
+<footer class="footer">
+    <h3>JUSTICE</h3>
+    <p>Court Hearing Schedule Management System</p>
+    <p>© 2026 JUSTICE | Academic Project</p>
+    <small>All records displayed are fictional demo data.</small>
+</footer>
+
+
+    <script src="js/calendar.js"></script>
+
+</body>
+</html>
