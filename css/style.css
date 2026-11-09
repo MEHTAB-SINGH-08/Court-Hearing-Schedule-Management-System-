@@ -138,8 +138,8 @@ footer{
     gap: 8px;
     color: white;
 }
-.sidebar{
-    display:flex;
+.sidebar {
+    display: flex;
     flex-direction: column;
     width: 220px;
     background-color: #142B46;
@@ -167,11 +167,12 @@ footer{
     background-color: #304B68;
     border-left: 4px #C5A45D solid;
 }
-.content-wrapper{
-    display:flex;
+.content-wrapper {
+    display: flex;
     flex-direction: row;
     flex: 1;
     align-items: stretch;
+    min-height: calc(100vh - 80px);
 }
 .stats-container{
     display: flex;
@@ -481,4 +482,364 @@ footer{
     color: #60758C;
     font-size: 12px;
     margin-top: 5px;
+}
+
+.case-status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.active-case {
+    background-color: #DDF5E5;
+    color: #18743A;
+}
+
+.pending-case {
+    background-color: #FFF2D6;
+    color: #946200;
+}
+
+.closed-case {
+    background-color: #E8EDF3;
+    color: #526477;
+}
+
+/* CASE DETAILS PAGE */
+
+.back-link {
+    display: inline-block;
+    color: #946200;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.case-detail-panel {
+    background-color: white;
+    border: 1px solid #D5DCE3;
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 22px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.04);
+}
+
+.case-detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E8EDF3;
+}
+
+.case-detail-header h3 {
+    color: #142B46;
+    font-size: 20px;
+}
+
+.case-detail-header p {
+    color: #60758C;
+    font-size: 13px;
+    margin-top: 7px;
+}
+
+.case-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.case-info-grid label {
+    color: #60758C;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.case-info-grid p {
+    color: #142B46;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 7px;
+}
+
+.case-detail-panel h3 {
+    color: #142B46;
+    margin-bottom: 18px;
+}
+
+.case-description {
+    color: #526477;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.view-btn {
+    color: #946200;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.view-btn:hover {
+    text-decoration: underline;
+}
+
+/* CALENDAR PAGE */
+
+.calendar-panel {
+    background-color: white;
+    padding: 25px;
+    margin-top: 25px;
+    border: 1px solid #D5DCE3;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.04);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.calendar-header h3 {
+    color: #142B46;
+    font-size: 20px;
+}
+
+.calendar-header button {
+    background-color: #142B46;
+    color: white;
+    border: none;
+    padding: 9px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.calendar-weekdays,
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+}
+
+.calendar-weekdays div {
+    text-align: center;
+    padding: 12px;
+    color: #60758C;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.calendar-day {
+    min-height: 85px;
+    padding: 10px;
+    border: 1px solid #E8EDF3;
+    border-radius: 6px;
+    color: #142B46;
+    cursor: pointer;
+    background-color: white;
+}
+
+.calendar-day:hover {
+    background-color: #F2F4F7;
+}
+
+.calendar-day.today {
+    border: 2px solid #C5A45D;
+}
+
+.calendar-day.selected {
+    background-color: #E8EDF3;
+    border: 2px solid #142B46;
+}
+
+.calendar-day.empty {
+    border: none;
+    cursor: default;
+    background: transparent;
+}
+
+.day-number {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.calendar-event {
+    margin-top: 7px;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+.calendar-event.upcoming-event {
+    background-color: #FFF2D6;
+    color: #946200;
+}
+
+.calendar-event.completed-event {
+    background-color: #DDF5E5;
+    color: #18743A;
+}
+
+.calendar-event.postponed-event {
+    background-color: #FCE4E4;
+    color: #A52A2A;
+}
+
+.calendar-legend {
+    display: flex;
+    gap: 25px;
+    margin: 20px 0;
+    font-size: 13px;
+    color: #526477;
+}
+
+.calendar-legend div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.upcoming-dot {
+    background-color: #D9A441;
+}
+
+.completed-dot {
+    background-color: #46A36A;
+}
+
+.postponed-dot {
+    background-color: #D66A6A;
+}
+
+.selected-date-panel {
+    background-color: white;
+    border: 1px solid #D5DCE3;
+    border-radius: 10px;
+    padding: 22px;
+    margin-top: 20px;
+}
+
+.selected-date-panel h3 {
+    color: #142B46;
+    margin-bottom: 15px;
+}
+
+.selected-hearing {
+    padding: 13px;
+    border-bottom: 1px solid #E8EDF3;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.selected-hearing strong {
+    color: #142B46;
+}
+
+.selected-hearing span {
+    color: #60758C;
+}
+
+.footer {
+    background-color: #142B46;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 0;
+}
+
+.footer h3 {
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 13px;
+    color: #D8E0E8;
+}
+
+.footer small {
+    display: block;
+    margin-top: 10px;
+    color: #AEBECD;
+    font-size: 11px;
+}
+
+.about-list {
+    padding-left: 22px;
+    color: #526477;
+    line-height: 2;
+    font-size: 14px;
+}
+
+.about-feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.about-feature {
+    background-color: #F2F4F7;
+    padding: 18px;
+    border-radius: 8px;
+    border-left: 4px solid #C5A45D;
+}
+
+.about-feature h4 {
+    color: #142B46;
+    margin-bottom: 8px;
+}
+
+.about-feature p {
+    color: #60758C;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.about-tech {
+    display: flex;
+    gap: 15px;
+}
+
+.about-tech span {
+    background-color: #E8EDF3;
+    color: #142B46;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 13px;
+}
+.about-team {
+    display: flex;
+    gap: 20px;
+}
+
+.about-team div {
+    background-color: #F2F4F7;
+    padding: 18px;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.about-team strong {
+    color: #142B46;
+}
+
+.about-team p {
+    color: #60758C;
+    font-size: 13px;
+    margin-top: 8px;
 }
